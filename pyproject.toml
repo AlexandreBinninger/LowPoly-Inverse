@@ -1,0 +1,21 @@
+[project]
+name = "lowpoly-mesher"
+version = "0.1.0"
+description = "Reverse engineering low-poly images into 3D meshes."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "opencv-python>=4.9.0",
+    "numpy>=1.26.0",
+    "scikit-learn>=1.4.0",
+    "triangle>=20230923",
+    "trimesh>=4.0.0",
+    "pillow>=10.2.0",
+]
+
+[tool.uv]
+# This section is optional but useful if you want to pin specific dev dependencies later
+dev-dependencies = [
+    "matplotlib>=3.8.0",  # Useful for debugging the triangulation visually
+    "ipykernel>=6.0.0",   # If you want to test in notebooks
+]
